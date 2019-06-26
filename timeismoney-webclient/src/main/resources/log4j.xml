@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="true"
+	xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+	<appender name="console"
+		class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- <param name="ConversionPattern" value="%d{HH:mm:ss} %-5p %c{1}: %m%n" /> -->
+			<param name="ConversionPattern" value="%d{HH:mm:ss} %-5p %c: %m%n" /> 
+		</layout>
+	</appender>
+	
+	<!-- Logger for Spring classes -->
+	<logger name="org.springframework">
+		<level value="error" />
+	</logger>
+
+	<!-- Logger for Hibernate classes -->
+	<logger name="org.hibernate">
+		<level value="error" />
+	</logger>
+
+	<!-- Logger for Apache classes -->
+	<logger name="org.apache">
+		<level value="error" />
+	</logger>
+	
+	<!-- Logger for Nexea failities classes -->
+	<logger name="de.nexea.unitool.failities">
+		<level value="error" />
+	</logger>
+
+	<!-- Logger for Current Project classes -->
+	<logger name="de.nexea.unitool.timeismoney.webclient">
+		<level value="debug" />
+	</logger>
+
+	<root>
+		<level value="ERROR" />
+		<appender-ref ref="console" />
+	</root>
+
+</log4j:configuration>
