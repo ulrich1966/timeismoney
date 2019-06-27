@@ -10,6 +10,7 @@
 	<description>spring-boot project 4 2 learn</description>
 
 	<modules>
+		<module>timeismoney-resources</module>
 		<module>timeismoney-model</module>
 		<module>timeismoney-controller</module>
 		<module>timeismoney-restservice</module>
