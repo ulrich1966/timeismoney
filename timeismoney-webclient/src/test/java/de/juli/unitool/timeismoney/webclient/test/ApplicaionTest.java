@@ -1,4 +1,4 @@
-package de.nexea.unitool.timeismoney.webclient.test;
+package de.juli.unitool.timeismoney.webclient.test;
 
 import java.net.URL;
 
@@ -11,7 +11,7 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import de.nexea.unitool.timeismoney.webclient.web.HelloController;
+import de.juli.unitool.timeismoney.webclient.web.HelloController;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = HelloController.class)

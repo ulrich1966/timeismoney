@@ -1,4 +1,4 @@
-package de.nexea.unitool.timeismoney.webclient.test;
+package de.juli.unitool.timeismoney.webclient.test;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -16,7 +16,7 @@ import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import de.nexea.unitool.failities.logger.PrettyLog;
+import de.juli.unitool.failities.logger.PrettyLog;
 
 @AutoConfigureMockMvc
 public class HelloControllerTest extends ApplicaionTest {

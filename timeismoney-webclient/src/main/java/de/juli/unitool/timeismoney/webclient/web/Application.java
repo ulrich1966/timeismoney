@@ -1,4 +1,4 @@
-package de.nexea.unitool.timeismoney.webclient.web;
+package de.juli.unitool.timeismoney.webclient.web;
 
 import java.util.Arrays;
 

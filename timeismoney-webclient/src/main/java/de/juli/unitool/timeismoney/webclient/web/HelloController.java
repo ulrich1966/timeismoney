@@ -1,4 +1,4 @@
-package de.nexea.unitool.timeismoney.webclient.web;
+package de.juli.unitool.timeismoney.webclient.web;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;

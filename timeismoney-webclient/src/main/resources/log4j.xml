@@ -27,12 +27,12 @@
 	</logger>
 	
 	<!-- Logger for Nexea failities classes -->
-	<logger name="de.nexea.unitool.failities">
+	<logger name="de.juli.unitool.failities">
 		<level value="error" />
 	</logger>
 
 	<!-- Logger for Current Project classes -->
-	<logger name="de.nexea.unitool.timeismoney.webclient">
+	<logger name="de.juli.unitool.timeismoney.webclient">
 		<level value="debug" />
 	</logger>
 

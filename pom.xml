@@ -2,7 +2,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>de.nexea.unitool</groupId>
+	<groupId>de.juli.unitool</groupId>
 	<artifactId>timeismoney</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -43,7 +43,7 @@
 				<version>${version.spring}</version>
 				<scope>test</scope>
 			</dependency>
-			
+
 			<!-- JUnit -->
 			<dependency>
 				<groupId>junit</groupId>
@@ -53,7 +53,7 @@
 
 			<!-- nexea -->
 			<dependency>
-				<groupId>de.nexea.unitool</groupId>
+				<groupId>de.juli.unitool</groupId>
 				<artifactId>facilities-logger</artifactId>
 				<version>${version.facilities}</version>
 			</dependency>
@@ -79,12 +79,26 @@
 
 		<!-- nexea -->
 		<dependency>
-			<groupId>de.nexea.unitool</groupId>
+			<groupId>de.juli.unitool</groupId>
 			<artifactId>facilities-logger</artifactId>
 		</dependency>
 	</dependencies>
 
 	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>3.1.1</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>3.1.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
