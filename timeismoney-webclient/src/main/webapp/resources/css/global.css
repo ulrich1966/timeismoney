@@ -1,0 +1,48 @@
+@charset "ISO-8859-1";
+
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+.content {
+	margin-top: 5em;
+	margin-left: 10em;
+	border: 1px solid black;
+	padding: 10px;
+	border-radius: 10px;
+	width: 80%;
+}
+
+input, select {
+	font-size: 1em;
+	padding: 5px;
+	border-radius: 5px;
+	border-style: solid;
+}
+
+.col-sm-4 {
+	padding: 0px;
+}
+
+.out{
+	font-size: 1.2em;
+}
+
+.out .row {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.cmd {
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+.head {
+	text-align: center;
+	font-size: 1.3em;
+	background-color: darkgray;
+	margin-top: 1.2em;
+	margin-bottom: 1.2em;
+}
+	
