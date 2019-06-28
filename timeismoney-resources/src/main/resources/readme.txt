@@ -1,8 +1,22 @@
-This Readme is included in 
-${project.artifactId}-
-${project.version}
-${project.packaging}
-${name}
+project.artifactId:					${project.artifactId}
+project.build.finalName: 			${project.build.finalName}
+project.version: 					${project.version}
+project.groupId:					${project.groupId}
+artifactId: 						${artifactId}
+project.packaging:					${project.packaging}
 
-${project.finalName}
-${artifactId}
+name: 								${name}
+
+project.basedir: 					${project.basedir} 
+
+project.build.directory: 			${project.build.directory}
+project.build.outputDirectory: 		${project.build.outputDirectory}
+project.build.testOutputDirectory: 	${project.build.testOutputDirectory}
+project.build.sourceDirectory: 		${project.build.sourceDirectory}
+project.build.testSourceDirectory: 	${project.build.testSourceDirectory}
+project.build.finalName: 			${project.build.finalName}
+
+settings.localRepository: 			${settings.localRepository}
+
+${version.parent}
+${param.parent}

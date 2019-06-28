@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="timeismoney-webclient-0.0.1-SNAPSHOT">
+    <wb-module deploy-name="timoweb">
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <dependent-module archiveName="timeismoney-resources-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/timeismoney-resources/timeismoney-resources">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <dependent-module archiveName="facilities-logger-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/facilities-logger/facilities-logger">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <property name="context-root" value="timeismoney-webclient"/>
         <property name="java-output-path" value="/timeismoney-webclient/target/classes"/>
+        <property name="context-root" value="timoweb"/>
     </wb-module>
 </project-modules>

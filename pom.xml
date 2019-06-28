@@ -6,7 +6,7 @@
 	<artifactId>timeismoney</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>uli</name>
+	<name>${app.name}</name>
 	<description>spring-boot project 4 2 learn</description>
 
 	<modules>
@@ -18,8 +18,15 @@
 	</modules>
 
 	<properties>
+		<app.name>timeismoney</app.name>
+		<timo.resrc>timeismoney-resources</timo.resrc>
+		<timo.model>timeismoney-model</timo.model>
+		<timo.cntr>timeismoney-controller</timo.cntr>
+		<timo.rest>timeismoney-restservice</timo.rest>
+		<timo.web>timeismoney-webclient</timo.web>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<version.parent>${project.version}</version.parent>
 		<version.spring>2.1.6.RELEASE</version.spring>
 		<version.junit>4.12</version.junit>
 		<version.facilities>0.0.1-SNAPSHOT</version.facilities>

@@ -2,39 +2,39 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<artifactId>timeismoney-webclient</artifactId>
+	<name>${app.name}</name>
+	<packaging>war</packaging>
+
 	<parent>
 		<groupId>de.juli.unitool</groupId>
 		<artifactId>timeismoney</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>timeismoney-webclient</artifactId>
-	<packaging>war</packaging>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>${project.groupId}</groupId>
-				<artifactId>timeismoney-resources</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-
-	<dependencies>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>timeismoney-resources</artifactId>
-		</dependency>
-	</dependencies>
+	<properties>
+		<app.name>timoweb</app.name>
+	</properties>
 
 	<build>
+		<finalName>${app.name}</finalName>
 		<pluginManagement>
 			<plugins>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-remote-resources-plugin</artifactId>
 					<version>1.6.0</version>
+					<configuration>
+						<includes>
+							<include>**/*.html</include>
+						</includes>
+						<resourceBundles>
+							<resourceBundle>${project.groupId}:${timo.resrc}:${project.version}</resourceBundle>
+							<resourceBundle>${project.groupId}:${timo.model}:${project.version}</resourceBundle>
+							<resourceBundle>${project.groupId}:${timo.cntr}:${project.version}</resourceBundle>
+							<resourceBundle>${project.groupId}:${timo.rest}:${project.version}</resourceBundle>
+						</resourceBundles>
+					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
@@ -50,10 +50,18 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-remote-resources-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>bundle</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-remote-resources-plugin</artifactId>
 				<configuration>
-					<resourceBundles>
-						<resourceBundle>${project.groupId}:timeismoney-resources:${project.version}</resourceBundle>
-					</resourceBundles>
 				</configuration>
 				<executions>
 					<execution>
@@ -63,10 +71,14 @@
 					</execution>
 				</executions>
 			</plugin>
-
-
-
 		</plugins>
-	</build>
 
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+
+	</build>
 </project>
