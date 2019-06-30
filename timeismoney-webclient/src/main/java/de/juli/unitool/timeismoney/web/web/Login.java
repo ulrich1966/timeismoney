@@ -35,7 +35,6 @@ public class Login implements Serializable {
 			this.loggedin = false;
 		}		
 	}
-	
 
 	public String login() {
 		CurrentUser currentUser = new CurrentUser(this.username, this.password);

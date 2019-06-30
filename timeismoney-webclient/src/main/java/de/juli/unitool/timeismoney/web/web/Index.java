@@ -21,6 +21,7 @@ public class Index {
 	private static final Logger LOG = LoggerFactory.getLogger(Index.class);
 	private static final PrettyLog LOG_PRETTY = new PrettyLog(LOG);
 	
+
 	@Autowired
 	UserSession session;
 	
