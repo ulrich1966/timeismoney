@@ -7,7 +7,7 @@
 	<ui:define name="content">
 		<h2>Hallo #{login.username} willkommen in der Zeitmachine</h2>
 		<h2>&nbsp;</h2>
-		<h:form id="loginForm" rendered="#{!home.session.login}">
+		<h:form id="loginForm" rendered="#{!login.loggedin}">
 			<b:container layout="fluid">
 				<b:panel title="login screen" look="primary">
 					<b:row>

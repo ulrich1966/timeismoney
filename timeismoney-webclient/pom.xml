@@ -3,7 +3,7 @@
 	<artifactId>timeismoney-webclient</artifactId>
 	<packaging>war</packaging>
 	<name>${app.name}</name>
-	
+
 	<parent>
 		<groupId>de.juli.unitool</groupId>
 		<artifactId>timeismoney</artifactId>
@@ -13,14 +13,14 @@
 	<properties>
 		<app.name>timoweb</app.name>
 	</properties>
-	
+
 	<dependencies>
 		<!-- server -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
-		
+
 		<!--JSF -->
 		<dependency>
 			<groupId>com.sun.faces</groupId>
@@ -33,7 +33,7 @@
 			<scope>compile</scope>
 			<optional>true</optional>
 		</dependency>
-		
+
 		<!-- faces -->
 		<dependency>
 			<groupId>net.bootsfaces</groupId>
@@ -44,13 +44,33 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<!-- Exclude the Tomcat dependency -->
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
+
+		<!-- Include the Tomcat dependency or different server likke jetty etc. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 		</dependency>
-		
+
 		<!-- juli -->
+		<dependency>
+			<artifactId>timeismoney-model</artifactId>
+			<groupId>${project.groupId}</groupId>
+			<version>${project.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>de.juli.unitool</groupId>
 			<artifactId>facilities-logger</artifactId>
@@ -66,7 +86,7 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
