@@ -7,7 +7,7 @@
         <dependent-module archiveName="timeismoney-model-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/timeismoney-model/timeismoney-model">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="facilities-logger-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/facilities-logger/facilities-logger">
+        <dependent-module archiveName="timeismoney-resources-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/timeismoney-resources/timeismoney-resources">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="java-output-path" value="/timeismoney-webclient/target/classes"/>

@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.servlet.ServletContextInitializer;
 import org.springframework.context.annotation.Configuration;
 
-import de.juli.unitool.failities.logger.PrettyLog;
+import de.juli.unitool.timoresrc.log.PrettyLog;
 
 @Configuration
 public class ServletInitializer implements ServletContextInitializer {

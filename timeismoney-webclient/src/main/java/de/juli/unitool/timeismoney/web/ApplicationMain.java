@@ -13,7 +13,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import de.juli.unitool.failities.logger.PrettyLog;
+import de.juli.unitool.timoresrc.log.PrettyLog;
+
 
 @Configuration
 @ComponentScan	

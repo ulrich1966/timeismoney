@@ -10,7 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import de.juli.unitool.failities.logger.PrettyLog;
+import de.juli.unitool.timoresrc.log.PrettyLog;
 
 @Controller
 public class CustomErrorController implements ErrorController  {

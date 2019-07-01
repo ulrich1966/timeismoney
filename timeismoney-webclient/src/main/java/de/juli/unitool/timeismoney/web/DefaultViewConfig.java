@@ -7,7 +7,8 @@ import org.springframework.core.Ordered;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import de.juli.unitool.failities.logger.PrettyLog;
+import de.juli.unitool.timoresrc.log.PrettyLog;
+
 
 @Configuration
 public class DefaultViewConfig implements WebMvcConfigurer {

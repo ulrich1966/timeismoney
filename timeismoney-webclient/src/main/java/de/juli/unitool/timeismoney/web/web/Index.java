@@ -12,8 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import de.juli.unitool.failities.logger.PrettyLog;
 import de.juli.unitool.timeismoney.web.container.UserSession;
+import de.juli.unitool.timoresrc.log.PrettyLog;
 
 @Scope(value = "request")
 @Component
