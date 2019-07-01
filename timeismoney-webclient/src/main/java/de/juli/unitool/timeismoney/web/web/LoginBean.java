@@ -13,9 +13,9 @@ import org.springframework.stereotype.Component;
 import de.juli.unitool.timeismoney.web.container.UserSession;
 import de.juli.unitool.timeismoney.web.viewmodel.CurrentUser;
 
-@Component
+@Component("login")
 @Scope("request")
-public class Login implements Serializable {
+public class LoginBean implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private String username;
 	private String password;

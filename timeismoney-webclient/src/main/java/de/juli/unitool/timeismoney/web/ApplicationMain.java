@@ -15,20 +15,39 @@ import org.springframework.context.annotation.Configuration;
 
 import de.juli.unitool.timoresrc.log.PrettyLog;
 
-
+/**
+ * Startet die Applikation
+ * 
+ * @author ukloodt
+ *
+ */
 @Configuration
-@ComponentScan	
+@ComponentScan
 @EnableAutoConfiguration
 @SpringBootApplication
 public class ApplicationMain extends SpringBootServletInitializer {
 	private static final Logger LOG = LoggerFactory.getLogger(ApplicationMain.class);
 	private static final PrettyLog LOG_PRETTY = new PrettyLog(LOG);
-	
+
+	/**
+	 * App Start
+	 * 
+	 * @param args Array von {@link String}
+	 */
 	public static void main(String[] args) {
 		LOG_PRETTY.info("Startig Application");
 		SpringApplication.run(ApplicationMain.class, args);
 	}
 
+	/**
+	 * regestriert das Sartservlet anlaog zu web.xml 
+	 * <servlet> <servlet-name>Faces Servlet</servlet-name>
+	 * <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+	 *  ...
+	 * </servlet>
+	 * 
+	 * @return
+	 */
 	@Bean
 	public ServletRegistrationBean<FacesServlet> servletRegistrationBean() {
 		LOG_PRETTY.info("servletRegistrationBean : register FacesServlet");

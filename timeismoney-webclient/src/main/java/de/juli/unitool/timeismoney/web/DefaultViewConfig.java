@@ -10,6 +10,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import de.juli.unitool.timoresrc.log.PrettyLog;
 
 
+/**
+ * Das sollte eigentlich dafur sorgen, dass die default maessig die index.xhtml im 
+ * root verzeichnis ausgeliefert wird. Analog zu <welcome-file> in der web.xml
+ * @author ukloodt
+ *
+ */
 @Configuration
 public class DefaultViewConfig implements WebMvcConfigurer {
 	private static final Logger LOG = LoggerFactory.getLogger(DefaultViewConfig.class);

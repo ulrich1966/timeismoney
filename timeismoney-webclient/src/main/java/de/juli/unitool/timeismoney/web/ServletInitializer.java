@@ -10,6 +10,11 @@ import org.springframework.context.annotation.Configuration;
 
 import de.juli.unitool.timoresrc.log.PrettyLog;
 
+/**
+ * Uebernimmt configuraton der web.xml
+ * @author ukloodt
+ *
+ */
 @Configuration
 public class ServletInitializer implements ServletContextInitializer {
 	private static final Logger LOG = LoggerFactory.getLogger(ServletInitializer.class);
