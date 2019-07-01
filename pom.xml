@@ -31,7 +31,7 @@
 		<version.junit>4.12</version.junit>
 		<version.jsf>2.2.8</version.jsf>
 		<version.bootsfaces>1.3.0</version.bootsfaces>
-		<version.persistence>2.7.4</version.persistence>
+		<version.persistence>2.5.0</version.persistence>
 		<maven.build.timestamp.format>yyyyMMdd'T'HHmmss</maven.build.timestamp.format>
 	</properties>
 
@@ -70,14 +70,13 @@
 				<artifactId>bootsfaces</artifactId>
 				<version>${version.bootsfaces}</version>
 			</dependency>
-			
+
 			<!-- persistence -->
-				<dependency>
-			<groupId>org.eclipse.persistence</groupId>
-			<artifactId>eclipselink</artifactId>
+			<dependency>
+				<groupId>org.eclipse.persistence</groupId>
+				<artifactId>eclipselink</artifactId>
 				<version>${version.persistence}</version>
-		</dependency>
-			
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

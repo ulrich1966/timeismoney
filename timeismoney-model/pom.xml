@@ -13,13 +13,14 @@
 
 	<properties>
 		<app.name>timomodel</app.name>
+		<version.mariadb>1.1.7</version.mariadb>
+		<version.jaxb>1.11.1</version.jaxb>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>eclipselink</artifactId>
-			<version>2.7.4</version>
 		</dependency>
 	</dependencies>
 
