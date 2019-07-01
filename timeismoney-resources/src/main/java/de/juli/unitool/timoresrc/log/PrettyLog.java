@@ -54,11 +54,62 @@ public class PrettyLog {
 	
 	/**
 	 * Loggt eine Liste mit Verten aus 
+	 * @param values {@link List}
+	 */
+	public void info(List<?> values) {
+		StringBuilder sb = new StringBuilder();
+		for (Object value : values) {
+			if(value.equals(values.get(values.size()-1))) {
+				sb.append(String.format("\t%s", value));				
+			} else {
+				sb.append(String.format("\t%s\n", value));
+			}
+		}
+		log.info("\n\n{}\n", sb.toString());			
+	}
+
+	/**
+	 * Loggt eine Liste mit Verten aus 
 	 * @param key {@link String}
 	 * @param values {@link List}
 	 */
 	public void info(String key, List<?> values) {
 		StringBuilder sb = new StringBuilder();
+		log.info("\n\n{}\n", key);			
+		for (Object value : values) {
+			if(value.equals(values.get(values.size()-1))) {
+				sb.append(String.format("\t%s", value));				
+			} else {
+				sb.append(String.format("\t%s\n", value));
+			}
+		}
+		log.info("\n\n{}\n", sb.toString());			
+	}
+
+	/**
+	 * Loggt eine Liste mit Verten aus 
+	 * @param values {@link List}
+	 */
+	public void debug(List<?> values) {
+		StringBuilder sb = new StringBuilder();
+		for (Object value : values) {
+			if(value.equals(values.get(values.size()-1))) {
+				sb.append(String.format("\t%s", value));				
+			} else {
+				sb.append(String.format("\t%s\n", value));
+			}
+		}
+		log.debug("\n\n{}\n", sb.toString());			
+	}
+	
+	/**
+	 * Loggt eine Liste mit Verten aus 
+	 * @param key {@link String}
+	 * @param values {@link List}
+	 */
+	public void debug(String key, List<?> values) {
+		StringBuilder sb = new StringBuilder();
+		log.info("\n\n{}\n", key);			
 		for (Object value : values) {
 			if(value.equals(values.get(values.size()-1))) {
 				sb.append(String.format("\t%s", value));				
