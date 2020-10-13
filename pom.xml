@@ -27,7 +27,7 @@
 		<version.parent>${project.version}</version.parent>
 		<version.logger>1.7.5</version.logger>
 		<version.spring>2.1.6.RELEASE</version.spring>
-		<version.junit>4.12</version.junit>
+		<version.junit>4.13.1</version.junit>
 		<version.jsf>2.2.8</version.jsf>
 		<version.bootsfaces>1.4.1</version.bootsfaces>
 		<version.persistence>2.5.0</version.persistence>
